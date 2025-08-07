@@ -2,6 +2,126 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "thommycobra${cwd}",
+			"type": "go",
+			"request": "launch",
+			"mode": "debug",
+			"program": "${file}"
+		},
+		{
+			"name": "Launch Package",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}"
+		},
+		{
+			"name": "chezlescobra${fileWorkspaceFolderBasename}",
+			"type": "go",
+			"request": "attach",
+			"mode": "remote",
+			"remotePath": "${workspaceFolder}",
+			"port": 2345,
+			"host": "127.0.0.1"
+		},
+		{
+			"name": "Attach to Chrome",
+			"port": 9222,
+			"request": "attach",
+			"type": "chrome",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "Launch Edge",
+			"request": "launch",
+			"type": "msedge",
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "thommycobra${cwd}",
+			"port": 9229,
+			"request": "attach",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "node"
+		},
+		{
+			"name": "thommycobra${cwd}",
+			"processId": "${command:PickProcess}",
+			"request": "attach",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "node"
+		},
+		{
+			"name": "Launch test function",
+			"type": "go",
+			"request": "launch",
+			"mode": "test",
+			"program": "${workspaceFolder}",
+			"args": [
+				"-test.run",
+				"MyTestFunction"
+			]
+		},
+		{
+			"address": "TCP/IP address of process to be debugged",
+			"localRoot": "${workspaceFolder}",
+			"name": "Attach to Remote",
+			"port": 9229,
+			"remoteRoot": "Absolute path to the remote directory containing the program",
+			"request": "attach",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "node"
+		},
+		{
+			"name": "Attach to Edge",
+			"port": 9222,
+			"request": "attach",
+			"type": "msedge",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "chezlescobra${cwd}",
+			"type": "go",
+			"request": "attach",
+			"mode": "remote",
+			"remotePath": "${workspaceFolder}",
+			"port": 2345,
+			"host": "127.0.0.1"
+		},
+		{
+			"name": "Launch file",
+			"type": "go",
+			"request": "launch",
+			"mode": "debug",
+			"program": "${file}"
+		},
+		{
+			"name": "Launch Package",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}"
+		},
+
+		{
+			"name": "Launch test function",
+			"type": "go",
+			"request": "launch",
+			"mode": "test",
+			"program": "${workspaceFolder}",
+			"args": [
+				"-test.run",
+				"MyTestFunction"
+			]
+		},
+		{
 			"name": "Launch Extension",
 			"type": "extensionHost",
 			"request": "launch",

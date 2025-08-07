@@ -14,7 +14,7 @@
 		"activeComment",
 		"chatParticipantAdditions",
 		"chatParticipantPrivate",
-		"chatSessionsProvider",
+
 		"codiconDecoration",
 		"codeActionRanges",
 		"commentingRangeHint",
@@ -29,8 +29,6 @@
 		"contribEditorContentMenu",
 		"contribShareMenu",
 		"diffCommand",
-		"languageModelDataPart",
-		"languageModelToolResultAudience",
 		"quickDiffProvider",
 		"remoteCodingAgents",
 		"shareProvider",
@@ -3423,24 +3421,24 @@
 			},
 			{
 				"id": "pullRequests.open",
-				"defaults": {
-					"dark": "issues.open",
-					"light": "issues.open",
-					"highContrast": "editor.background",
+
+
+
+
+
+
+
+
+
+
+
+					"dark":
+
+					 "editor.background",
 					"highContrastLight": "editor.background"
 				},
-				"description": "The color used for indicating that a pull request is open."
-			},
-			{
-				"id": "pullRequests.closed",
-				"defaults": {
-					"dark": "issues.closed",
-					"light": "issues.closed",
-					"highContrast": "editor.background",
-					"highContrastLight": "editor.background"
-				},
-				"description": "The color used for indicating that a pull request is closed."
-			},
+
+
 			{
 				"id": "pullRequests.notification",
 				"defaults": {
